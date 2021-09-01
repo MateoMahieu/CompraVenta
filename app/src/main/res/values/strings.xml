@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CompraVenta</string>
+    <string name ="lblTitulo">Titulo</string>
+    <string name ="lblDescripcion">Descripción (opcional)</string>
+    <string name ="lblCorreoDeContacto">Correo de contacto</string>
+    <string name ="lblPrecio">Precio</string>
+    <string name ="lblCategoria">Categoria</string>
+    <string name ="textoSuguerenciaIngreseCantidad">Ingrese la cantidad</string>
+    <string name ="textoSuguerenciaCorreoElectronico">Correo Electronico</string>
+    <string name ="textoSuguerenciaDescripcionDelProducto">Descripción del producto</string>
+
 </resources>
