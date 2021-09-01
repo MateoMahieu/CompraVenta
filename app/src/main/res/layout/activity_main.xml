@@ -11,25 +11,29 @@
         android:id="@+id/lblTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblTitulo" />
+        android:text="@string/lblTitulo"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/lblDescripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblDescripcion" />
+        android:text="@string/lblDescripcion"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtDescripcion"
         android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_height="75dp"
         android:ems="10"
         android:hint="@string/textoSuguerenciaDescripcionDelProducto"
         android:inputType="textCapSentences|textMultiLine"
@@ -39,7 +43,8 @@
         android:id="@+id/lblCorreoDeContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblCorreoDeContacto" />
+        android:text="@string/lblCorreoDeContacto"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtEmail"
@@ -47,13 +52,15 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/textoSuguerenciaCorreoElectronico"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/lblPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblPrecio" />
+        android:text="@string/lblPrecio"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txtPrecio"
@@ -61,17 +68,80 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/textoSuguerenciaIngreseCantidad"
-        android:inputType="number" />
+        android:inputType="number"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/lblCategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblCategoria" />
+        android:text="@string/lblCategoria"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/spinnerCategoria"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Switch
+        android:id="@+id/switchOfrecerDescuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/lblOfrecerDescuento" />
+
+    <TextView
+        android:id="@+id/txtPorcentaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/lblPorcenjeInicial"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarDescuento"
+        style=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="0" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRetiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/lblRetiro" />
+
+    <TextView
+        android:id="@+id/lblDireccionDeRetiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDireccion"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtDireccionRetiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/textoSuguerenciaDireccion"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTerminosYcondiciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/lblTerminosYCondiciones" />
+
+    <Button
+        android:id="@+id/btnPublicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblBotonPublicar" />
 
 </LinearLayout>
