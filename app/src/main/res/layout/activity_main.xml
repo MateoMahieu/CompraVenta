@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/textoSuguerenciaTitulo"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -36,7 +37,7 @@
         android:layout_height="75dp"
         android:ems="10"
         android:hint="@string/textoSuguerenciaDescripcionDelProducto"
-        android:inputType="textCapSentences|textMultiLine"
+        android:inputType="textCapSentences|textMultiLine|textAutoCorrect"
         android:text="" />
 
     <TextView
@@ -82,6 +83,7 @@
         android:id="@+id/spinnerCategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Switch
@@ -97,6 +99,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/lblPorcenjeInicial"
+        android:visibility="gone"
         android:textColor="#000"
         android:textSize="20sp" />
 
@@ -106,6 +109,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="100"
+        android:visibility="gone"
         android:min="0" />
 
     <CheckBox
@@ -120,6 +124,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lblDireccion"
+        android:visibility="gone"
         android:textStyle="bold" />
 
     <EditText
@@ -129,6 +134,7 @@
         android:ems="10"
         android:hint="@string/textoSuguerenciaDireccion"
         android:inputType="textPersonName"
+        android:visibility="gone"
         android:minHeight="48dp" />
 
     <CheckBox
@@ -142,6 +148,7 @@
         android:id="@+id/btnPublicar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:text="@string/lblBotonPublicar" />
 
 </LinearLayout>
