@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="listaCategorias">
+        <item>Seleccionar</item>
         <item>INDUMENTARIA</item>
         <item>ELECTRONICA</item>
         <item>ENTRETENIMIENTO</item>
